@@ -6,6 +6,7 @@ from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required
 
+# use this app to create users seemlessly
 def signupaccount(request):
     if request.method == 'GET':
         return render(request, 'signupaccount.html', {'form':UserCreateForm})
